@@ -14,7 +14,6 @@ defmodule RumblWeb.Router do
   end
 
   scope "/", RumblWeb do
-    # Use the default browser stack
     pipe_through(:browser)
 
     get("/users", UserController, :index)
